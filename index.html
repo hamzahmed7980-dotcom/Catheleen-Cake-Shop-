@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catheleen Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍰 Catheleen Cake Shop</h1>
+
+<div class="customer">
+    <input type="text" id="name" placeholder="Customer Name">
+    <input type="text" id="address" placeholder="Address">
+    <input type="datetime-local" id="delivery">
+    <input type="text" id="altmobile" placeholder="Alternative Mobile Number">
+</div>
+
+<div id="products"></div>
+
+<h2>Total: ₹ <span id="total">0</span></h2>
+
+<h3>Payment Method</h3>
+<label><input type="radio" name="pay" value="Cash"> Cash</label>
+<label><input type="radio" name="pay" value="UPI"> UPI</label>
+
+<br><br>
+<button onclick="placeOrder()">Place Order on WhatsApp</button>
+
+<script src="script.js"></script>
+</body>
+</html>
