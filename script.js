@@ -60,7 +60,16 @@ container.className="products";
 cakes.forEach((cake,i)=>{
     container.innerHTML += `
     <div class="cake">
+        <img src="cake${i+1}.jpg" style="width:100%;height:180px;object-fit:cover;border-radius:8px;">
         <h3>${cake.name}</h3>
+        <p>${cake.desc}</p>
+        <b>₹${cake.price} per kg</b>
+        <div class="qty">
+            <button onclick="decrease(${i})">-</button>
+            <span id="q${i}">0</span>
+            <button onclick="increase(${i})">+</button>
+        </div>
+    </div>`;
         <p>${cake.desc}</p>
         <b>₹${cake.price} per kg</b>
         <div class="qty">
