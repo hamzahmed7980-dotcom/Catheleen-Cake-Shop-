@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catheleen Cake Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>🍰 Catheleen Cake Shop</h1>
+    <h1>🍰 Catheleen Cake Shop</h1>
 
-<div class="customer">
-    <input type="text" id="name" placeholder="Customer Name">
-    <input type="text" id="address" placeholder="Address">
-    <input type="datetime-local" id="delivery">
-    <input type="text" id="altmobile" placeholder="Alternative Mobile Number">
-</div>
+    <!-- Customer Details -->
+    <div class="customer">
+        <input type="text" id="name" placeholder="Customer Name" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="datetime-local" id="delivery" required>
+        <input type="text" id="altmobile" placeholder="Alternative Mobile Number" required>
+    </div>
 
-<div id="products"></div>
+    <hr>
 
-<h2>Total: ₹ <span id="total">0</span></h2>
+    <!-- Cakes will load here from script.js -->
+    <div id="products" class="products"></div>
 
-<h3>Payment Method</h3>
-<label><input type="radio" name="pay" value="Cash"> Cash</label>
-<label><input type="radio" name="pay" value="UPI"> UPI</label>
+    <hr>
 
-<br><br>
-<button onclick="placeOrder()">Place Order on WhatsApp</button>
+    <h2>Total: ₹ <span id="total">0</span></h2>
 
-<script src="script.js"></script>
+    <h3>Payment Method</h3>
+    <label>
+        <input type="radio" name="pay" value="Cash"> Cash
+    </label>
+    <label>
+        <input type="radio" name="pay" value="UPI"> UPI
+    </label>
+
+    <br><br>
+
+    <button onclick="placeOrder()">Place Order on WhatsApp</button>
+
+    <!-- IMPORTANT: defer makes JS run after page loads -->
+    <script defer src="script.js"></script>
+
 </body>
 </html>
