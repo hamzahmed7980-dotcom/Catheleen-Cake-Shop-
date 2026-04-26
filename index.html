@@ -18,11 +18,11 @@
 
 <div class="cakes">
 
-    <!-- Cake 1 -->
+    <!-- 1 -->
     <div class="cake">
         <img src="cake1.jpg">
-        <h3>Chocolate Truffle Cake - ₹600/kg</h3>
-        <p>Rich chocolate layers filled with creamy truffle and topped with glossy ganache. Perfect for chocolate lovers and celebrations.</p>
+        <h3>Chocolate Truffle - ₹600/kg</h3>
+        <p>Rich chocolate sponge layered with truffle cream and covered in glossy ganache for true chocolate lovers.</p>
         <div class="qty">
             <button onclick="updateQty('Chocolate Truffle',600,-1)">-</button>
             <span id="qty-Chocolate Truffle">0</span>
@@ -30,11 +30,11 @@
         </div>
     </div>
 
-    <!-- Cake 2 -->
+    <!-- 2 -->
     <div class="cake">
         <img src="cake2.jpg">
-        <h3>Black Forest Cake - ₹550/kg</h3>
-        <p>Soft chocolate sponge layered with whipped cream and cherries, finished with chocolate flakes for a classic delight.</p>
+        <h3>Black Forest - ₹550/kg</h3>
+        <p>Chocolate sponge, whipped cream, cherries and chocolate flakes in a timeless classic delight.</p>
         <div class="qty">
             <button onclick="updateQty('Black Forest',550,-1)">-</button>
             <span id="qty-Black Forest">0</span>
@@ -42,11 +42,11 @@
         </div>
     </div>
 
-    <!-- Cake 3 -->
+    <!-- 3 -->
     <div class="cake">
         <img src="cake3.jpg">
-        <h3>Butterscotch Cake - ₹500/kg</h3>
-        <p>Moist vanilla sponge layered with butterscotch cream and crunchy caramel bits for a sweet and crunchy bite.</p>
+        <h3>Butterscotch - ₹500/kg</h3>
+        <p>Soft vanilla sponge with butterscotch cream and crunchy caramel bits for sweet lovers.</p>
         <div class="qty">
             <button onclick="updateQty('Butterscotch',500,-1)">-</button>
             <span id="qty-Butterscotch">0</span>
@@ -54,11 +54,11 @@
         </div>
     </div>
 
-    <!-- Cake 4 -->
+    <!-- 4 -->
     <div class="cake">
         <img src="cake4.jpg">
         <h3>Strawberry Delight - ₹650/kg</h3>
-        <p>Fresh strawberry flavor blended with soft cream layers and topped with juicy strawberries for a refreshing taste.</p>
+        <p>Fresh strawberry cream with soft sponge layers topped with juicy strawberries.</p>
         <div class="qty">
             <button onclick="updateQty('Strawberry Delight',650,-1)">-</button>
             <span id="qty-Strawberry Delight">0</span>
@@ -66,11 +66,83 @@
         </div>
     </div>
 
+    <!-- 5 -->
+    <div class="cake">
+        <img src="cake5.jpg">
+        <h3>Pineapple - ₹480/kg</h3>
+        <p>Light vanilla sponge layered with pineapple cream and pineapple chunks for tropical taste.</p>
+        <div class="qty">
+            <button onclick="updateQty('Pineapple',480,-1)">-</button>
+            <span id="qty-Pineapple">0</span>
+            <button onclick="updateQty('Pineapple',480,1)">+</button>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="cake">
+        <img src="cake6.jpg">
+        <h3>Red Velvet - ₹700/kg</h3>
+        <p>Premium red velvet sponge with smooth cream cheese frosting for rich celebrations.</p>
+        <div class="qty">
+            <button onclick="updateQty('Red Velvet',700,-1)">-</button>
+            <span id="qty-Red Velvet">0</span>
+            <button onclick="updateQty('Red Velvet',700,1)">+</button>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="cake">
+        <img src="cake7.jpg">
+        <h3>KitKat Chocolate - ₹750/kg</h3>
+        <p>Chocolate cake wrapped in KitKat bars and topped with gems, loved by kids and adults.</p>
+        <div class="qty">
+            <button onclick="updateQty('KitKat',750,-1)">-</button>
+            <span id="qty-KitKat">0</span>
+            <button onclick="updateQty('KitKat',750,1)">+</button>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="cake">
+        <img src="cake8.jpg">
+        <h3>Oreo Cream - ₹720/kg</h3>
+        <p>Soft sponge layered with Oreo cream and crushed Oreo toppings for cookie fans.</p>
+        <div class="qty">
+            <button onclick="updateQty('Oreo',720,-1)">-</button>
+            <span id="qty-Oreo">0</span>
+            <button onclick="updateQty('Oreo',720,1)">+</button>
+        </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="cake">
+        <img src="cake9.jpg">
+        <h3>Mango Fresh - ₹650/kg</h3>
+        <p>Fresh mango pulp blended with whipped cream on soft sponge for fruity sweetness.</p>
+        <div class="qty">
+            <button onclick="updateQty('Mango',650,-1)">-</button>
+            <span id="qty-Mango">0</span>
+            <button onclick="updateQty('Mango',650,1)">+</button>
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="cake">
+        <img src="cake10.jpg">
+        <h3>Vanilla Almond - ₹500/kg</h3>
+        <p>Classic vanilla cake topped with crunchy almonds and smooth cream for elegant taste.</p>
+        <div class="qty">
+            <button onclick="updateQty('Vanilla Almond',500,-1)">-</button>
+            <span id="qty-Vanilla Almond">0</span>
+            <button onclick="updateQty('Vanilla Almond',500,1)">+</button>
+        </div>
+    </div>
+
 </div>
 
 <h2 style="text-align:center">Order Details</h2>
 
-<div style="padding:20px; text-align:center;">
+<div style="text-align:center; padding:20px;">
     <input id="name" placeholder="Your Name"><br><br>
     <input id="address" placeholder="Address"><br><br>
     <input id="date" type="datetime-local"><br><br>
