@@ -1,48 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catheleen Cake Shop</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header with Logo -->
-    <div class="header">
-        <img src="logo.png" class="logo">
-        <div class="title">Catheleen Cake Shop</div>
+<header>
+    <img src="logo.png" alt="Catheleen Logo">
+</header>
+
+<div class="banner"></div>
+
+<h1>Our Delicious Cakes</h1>
+
+<div class="cakes">
+
+    <!-- Cake 1 -->
+    <div class="cake">
+        <img src="cake1.jpg">
+        <h3>Chocolate Truffle Cake - ₹600/kg</h3>
+        <p>Rich chocolate layers filled with creamy truffle and topped with glossy ganache. Perfect for chocolate lovers and celebrations.</p>
+        <div class="qty">
+            <button onclick="updateQty('Chocolate Truffle',600,-1)">-</button>
+            <span id="qty-Chocolate Truffle">0</span>
+            <button onclick="updateQty('Chocolate Truffle',600,1)">+</button>
+        </div>
     </div>
 
-    <!-- Banner Image -->
-    <div class="banner"></div>
-
-    <!-- Customer Details -->
-    <div class="customer">
-        <input type="text" id="name" placeholder="Customer Name" required>
-        <input type="text" id="address" placeholder="Address" required>
-        <input type="datetime-local" id="delivery" required>
-        <input type="text" id="altmobile" placeholder="Alternative Mobile Number" required>
+    <!-- Cake 2 -->
+    <div class="cake">
+        <img src="cake2.jpg">
+        <h3>Black Forest Cake - ₹550/kg</h3>
+        <p>Soft chocolate sponge layered with whipped cream and cherries, finished with chocolate flakes for a classic delight.</p>
+        <div class="qty">
+            <button onclick="updateQty('Black Forest',550,-1)">-</button>
+            <span id="qty-Black Forest">0</span>
+            <button onclick="updateQty('Black Forest',550,1)">+</button>
+        </div>
     </div>
 
-    <!-- Cakes will load here -->
-    <div id="products" class="products"></div>
-
-    <!-- Total Section -->
-    <h2 style="text-align:center;">Total: ₹ <span id="total">0</span></h2>
-
-    <!-- Payment -->
-    <div style="text-align:center;">
-        <h3>Payment Method</h3>
-        <label><input type="radio" name="pay" value="Cash"> Cash</label>
-        <label><input type="radio" name="pay" value="UPI"> UPI</label>
-        <br><br>
-        <button onclick="placeOrder()">Place Order on WhatsApp</button>
+    <!-- Cake 3 -->
+    <div class="cake">
+        <img src="cake3.jpg">
+        <h3>Butterscotch Cake - ₹500/kg</h3>
+        <p>Moist vanilla sponge layered with butterscotch cream and crunchy caramel bits for a sweet and crunchy bite.</p>
+        <div class="qty">
+            <button onclick="updateQty('Butterscotch',500,-1)">-</button>
+            <span id="qty-Butterscotch">0</span>
+            <button onclick="updateQty('Butterscotch',500,1)">+</button>
+        </div>
     </div>
 
-    <!-- Script -->
-    <script defer src="script.js"></script>
+    <!-- Cake 4 -->
+    <div class="cake">
+        <img src="cake4.jpg">
+        <h3>Strawberry Delight - ₹650/kg</h3>
+        <p>Fresh strawberry flavor blended with soft cream layers and topped with juicy strawberries for a refreshing taste.</p>
+        <div class="qty">
+            <button onclick="updateQty('Strawberry Delight',650,-1)">-</button>
+            <span id="qty-Strawberry Delight">0</span>
+            <button onclick="updateQty('Strawberry Delight',650,1)">+</button>
+        </div>
+    </div>
+
+</div>
+
+<h2 style="text-align:center">Order Details</h2>
+
+<div style="padding:20px; text-align:center;">
+    <input id="name" placeholder="Your Name"><br><br>
+    <input id="address" placeholder="Address"><br><br>
+    <input id="date" type="datetime-local"><br><br>
+    <input id="alt" placeholder="Alternative Mobile Number"><br><br>
+
+    <label><input type="radio" name="payment" value="Cash" checked> Cash</label>
+    <label><input type="radio" name="payment" value="UPI"> UPI</label><br><br>
+
+    <button onclick="placeOrder()">Place Order on WhatsApp</button>
+</div>
+
+<div class="cart">
+    <span id="total">Total: ₹0</span>
+</div>
 
 </body>
 </html>
