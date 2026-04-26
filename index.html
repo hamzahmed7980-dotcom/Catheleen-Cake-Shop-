@@ -9,7 +9,14 @@
 
 <body>
 
-    <h1>🍰 Catheleen Cake Shop</h1>
+    <!-- Header with Logo -->
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <div class="title">Catheleen Cake Shop</div>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="banner"></div>
 
     <!-- Customer Details -->
     <div class="customer">
@@ -19,28 +26,22 @@
         <input type="text" id="altmobile" placeholder="Alternative Mobile Number" required>
     </div>
 
-    <hr>
-
-    <!-- Cakes will load here from script.js -->
+    <!-- Cakes will load here -->
     <div id="products" class="products"></div>
 
-    <hr>
+    <!-- Total Section -->
+    <h2 style="text-align:center;">Total: ₹ <span id="total">0</span></h2>
 
-    <h2>Total: ₹ <span id="total">0</span></h2>
+    <!-- Payment -->
+    <div style="text-align:center;">
+        <h3>Payment Method</h3>
+        <label><input type="radio" name="pay" value="Cash"> Cash</label>
+        <label><input type="radio" name="pay" value="UPI"> UPI</label>
+        <br><br>
+        <button onclick="placeOrder()">Place Order on WhatsApp</button>
+    </div>
 
-    <h3>Payment Method</h3>
-    <label>
-        <input type="radio" name="pay" value="Cash"> Cash
-    </label>
-    <label>
-        <input type="radio" name="pay" value="UPI"> UPI
-    </label>
-
-    <br><br>
-
-    <button onclick="placeOrder()">Place Order on WhatsApp</button>
-
-    <!-- IMPORTANT: defer makes JS run after page loads -->
+    <!-- Script -->
     <script defer src="script.js"></script>
 
 </body>
